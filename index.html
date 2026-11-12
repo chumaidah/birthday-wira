@@ -1,0 +1,1894 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Wira! ♡ | Oracle Red Bull Racing Edition 🏁</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Playfair Display, Lora, Cormorant Garamond, Poppins, Orbitron -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Orbitron:wght@500;600;700;800;900&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        midnightNavy: '#071D49',
+                        racingBlue: '#003DA5',
+                        electricBlue: '#1677FF',
+                        racingRed: '#E10600',
+                        redBullYellow: '#FFD700',
+                        iceBlue: '#EAF2FF',
+                        pureWhite: '#FFFFFF',
+                        navyBg: '#041029',
+                        navyCard: '#0A2254',
+                        navySurface: '#0E2D6D',
+                        textDark: '#071D49',
+                        textMuted: '#506784'
+                    },
+                    fontFamily: {
+                        display: ['"Playfair Display"', 'Georgia', 'serif'],
+                        serif: ['"Lora"', 'Georgia', 'serif'],
+                        quote: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        sans: ['"Poppins"', 'system-ui', 'sans-serif'],
+                        racing: ['"Orbitron"', 'system-ui', 'monospace']
+                    },
+                    boxShadow: {
+                        'envelope': '0 25px 60px -15px rgba(4, 16, 41, 0.9), 0 10px 30px -8px rgba(225, 6, 0, 0.45)',
+                        'letter': '0 25px 65px -15px rgba(7, 29, 73, 0.5), 0 10px 30px -6px rgba(0, 61, 165, 0.3)',
+                        'seal': '0 10px 28px rgba(225, 6, 0, 0.65), inset 0 2px 6px rgba(255, 215, 0, 0.85)',
+                        'neon': '0 0 22px rgba(22, 119, 255, 0.45)',
+                        'yellowGlow': '0 0 20px rgba(255, 215, 0, 0.45)'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* =========================================================
+           ORACLE RED BULL RACING x MAX VERSTAPPEN AESTHETIC
+           Midnight Navy, Racing Blue, Electric Blue, Racing Red, Yellow
+           ========================================================= */
+        body {
+            background-color: #071D49;
+            background-image:
+                radial-gradient(circle at 18% 18%, rgba(0, 61, 165, 0.65) 0%, transparent 48%),
+                radial-gradient(circle at 82% 82%, rgba(225, 6, 0, 0.25) 0%, transparent 46%),
+                radial-gradient(circle at 50% 12%, rgba(255, 215, 0, 0.16) 0%, transparent 42%),
+                radial-gradient(circle at 86% 22%, rgba(22, 119, 255, 0.35) 0%, transparent 44%),
+                linear-gradient(rgba(234, 242, 255, 0.035) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(234, 242, 255, 0.035) 1px, transparent 1px);
+            background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 36px 36px, 36px 36px;
+            color: #EAF2FF;
+            overflow-x: hidden;
+        }
+
+        /* Red Bull Racing Stripes Pinstripe */
+        .racing-stripes-gradient {
+            background: linear-gradient(90deg,
+                #E10600 0%, #E10600 32%,
+                #FFD700 32%, #FFD700 48%,
+                #1677FF 48%, #1677FF 68%,
+                #003DA5 68%, #003DA5 100%
+            );
+        }
+
+        /* Checkered Flag Graphic Strip */
+        .checkered-pattern {
+            background-image:
+                linear-gradient(45deg, #071D49 25%, transparent 25%),
+                linear-gradient(-45deg, #071D49 25%, transparent 25%),
+                linear-gradient(45deg, transparent 75%, #071D49 75%),
+                linear-gradient(-45deg, transparent 75%, #071D49 75%);
+            background-size: 8px 8px;
+            background-position: 0 0, 0 4px, 4px -4px, -4px 0px;
+        }
+
+        .checkered-pattern-light {
+            background-image:
+                linear-gradient(45deg, #EAF2FF 25%, transparent 25%),
+                linear-gradient(-45deg, #EAF2FF 25%, transparent 25%),
+                linear-gradient(45deg, transparent 75%, #EAF2FF 75%),
+                linear-gradient(-45deg, transparent 75%, #EAF2FF 75%);
+            background-size: 8px 8px;
+            background-position: 0 0, 0 4px, 4px -4px, -4px 0px;
+        }
+
+        /* 3D Envelope Perspective */
+        .envelope-scene {
+            perspective: 1200px;
+        }
+
+        .envelope-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 375px;
+            aspect-ratio: 1.48 / 1;
+            transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+            transform-style: preserve-3d;
+        }
+
+        .envelope-wrapper:hover {
+            transform: translateY(-5px) scale(1.018);
+        }
+
+        /* Envelope Top Flap (Racing Blue & Red Bull Livery) */
+        .envelope-flap {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 58%;
+            background: linear-gradient(180deg, #003DA5 0%, #071D49 100%);
+            clip-path: polygon(0 0, 100% 0, 50% 100%);
+            transform-origin: top center;
+            transform: rotateX(0deg) translateZ(8px);
+            transition: transform 0.75s cubic-bezier(0.4, 0, 0.2, 1), z-index 0.75s step-end;
+            z-index: 30;
+            filter: drop-shadow(0 8px 12px rgba(4, 16, 41, 0.55));
+            backface-visibility: visible;
+        }
+
+        .envelope-flap::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #E10600 0%, #FFD700 50%, #1677FF 100%);
+        }
+
+        /* When opened: flap smoothly folds backward and moves behind the letter */
+        .envelope-wrapper.is-open .envelope-flap {
+            transform: translateZ(-8px) rotateX(180deg);
+            z-index: 2;
+            transition: transform 0.75s cubic-bezier(0.4, 0, 0.2, 1), z-index 0.15s ease;
+            filter: drop-shadow(0 -4px 10px rgba(4, 16, 41, 0.45));
+        }
+
+        /* Inner Letter Peek (White / Ice Blue Paddock Pass Card) */
+        .letter-peek {
+            position: absolute;
+            left: 6%;
+            right: 6%;
+            bottom: 7%;
+            height: 84%;
+            background: #FFFFFF;
+            border: 1px solid rgba(22, 119, 255, 0.45);
+            border-radius: 14px;
+            z-index: 15;
+            transform: translateY(0) translateZ(2px);
+            transition: transform 0.85s cubic-bezier(0.22, 1, 0.36, 1) 0.15s,
+                        z-index 0.85s step-end,
+                        box-shadow 0.6s ease;
+            box-shadow: 0 -4px 22px rgba(4, 16, 41, 0.25);
+        }
+
+        /* When opened: letter glides UP and forward, clearly in front of the flap */
+        .envelope-wrapper.is-open .letter-peek {
+            transform: translateY(-72%) translateZ(45px) scale(1.03);
+            z-index: 45;
+            transition: transform 0.85s cubic-bezier(0.22, 1, 0.36, 1) 0.2s,
+                        z-index 0.15s ease 0.2s,
+                        box-shadow 0.85s ease 0.2s;
+            box-shadow: 0 20px 45px -10px rgba(4, 16, 41, 0.55), 0 0 22px rgba(22, 119, 255, 0.35);
+        }
+
+        /* Envelope Folds (Midnight Navy & Racing Blue with Sleek Metallic Sheen) */
+        .envelope-pocket-left {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, #0A2254 0%, #071D49 100%);
+            clip-path: polygon(0 0, 52% 54%, 0 100%);
+            z-index: 20;
+            transform: translateZ(4px);
+            border-bottom-left-radius: 18px;
+            border-left: 1px solid rgba(22, 119, 255, 0.3);
+        }
+
+        .envelope-pocket-right {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(225deg, #0A2254 0%, #071D49 100%);
+            clip-path: polygon(100% 0, 48% 54%, 100% 100%);
+            z-index: 20;
+            transform: translateZ(4px);
+            border-bottom-right-radius: 18px;
+            border-right: 1px solid rgba(22, 119, 255, 0.3);
+        }
+
+        .envelope-pocket-bottom {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(0deg, #041029 0%, #0A2254 65%, #003DA5 100%);
+            clip-path: polygon(0 100%, 50% 48%, 100% 100%);
+            z-index: 25;
+            transform: translateZ(6px);
+            border-bottom-left-radius: 18px;
+            border-bottom-right-radius: 18px;
+            border-bottom: 2px solid #E10600;
+            filter: drop-shadow(0 -4px 10px rgba(4, 16, 41, 0.45));
+        }
+
+        /* Red Bull Racing Champion Wax Seal (#1 & Heart) */
+        @keyframes sealGlow {
+            0%, 100% {
+                box-shadow: 0 10px 26px rgba(225, 6, 0, 0.65), 0 0 0 0 rgba(255, 215, 0, 0.6);
+            }
+            50% {
+                box-shadow: 0 12px 30px rgba(225, 6, 0, 0.85), 0 0 0 12px rgba(255, 215, 0, 0);
+            }
+        }
+
+        .wax-seal {
+            background: radial-gradient(circle at 35% 30%, #FFD700 0%, #FF2A24 35%, #E10600 70%, #7D0200 100%);
+            animation: sealGlow 2.8s infinite ease-in-out;
+            transform: translate(-50%, -50%) translateZ(10px);
+            transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.4s ease;
+        }
+
+        .envelope-wrapper:hover .wax-seal {
+            transform: translate(-50%, -50%) scale(1.1) translateZ(14px);
+        }
+
+        .envelope-wrapper.is-open .wax-seal {
+            opacity: 0;
+            pointer-events: none;
+            z-index: 0;
+            transform: translate(-50%, -50%) scale(0.65) translateZ(0);
+        }
+
+        /* Letter Card Reveal Animation */
+        @keyframes letterReveal {
+            0% {
+                opacity: 0;
+                transform: translateY(28px) scale(0.97);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .animate-letter-reveal {
+            animation: letterReveal 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        }
+
+        /* Ambient F1 Sparkles */
+        @keyframes ambientFloat {
+            0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.55; }
+            50% { transform: translateY(-10px) rotate(8deg); opacity: 0.95; }
+        }
+
+        .ambient-sparkle {
+            animation: ambientFloat 4.2s infinite ease-in-out;
+        }
+
+        /* Full-Viewport Scattered Confetti / Hearts Layer */
+        #emoji-burst-layer {
+            position: fixed;
+            inset: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: 9999;
+        }
+
+        @keyframes scatterFloatUp {
+            0% {
+                opacity: 0;
+                transform: translate3d(0, 0, 0) rotate(0deg) scale(0.55);
+            }
+            12% {
+                opacity: 1;
+            }
+            50% {
+                transform: translate3d(var(--sway-mid, 24px), -52vh, 0) rotate(var(--rot-mid, 14deg)) scale(1.08);
+            }
+            88% {
+                opacity: 0.95;
+            }
+            100% {
+                opacity: 0;
+                transform: translate3d(var(--sway-end, -22px), -108vh, 0) rotate(var(--rot-end, -18deg)) scale(0.85);
+            }
+        }
+
+        .floating-heart {
+            position: absolute;
+            bottom: -36px;
+            will-change: transform, opacity;
+            user-select: none;
+            line-height: 1;
+            animation-name: scatterFloatUp;
+            animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+            animation-fill-mode: forwards;
+        }
+
+        /* Red Bull Racing Telemetry Equalizer Bars */
+        @keyframes eqBounce {
+            0%, 100% { height: 4px; }
+            50% { height: 16px; }
+        }
+
+        .eq-bar {
+            width: 3px;
+            border-radius: 9999px;
+            transition: height 0.2s ease;
+        }
+
+        .eq-bar:nth-child(odd) { background-color: #E10600; }
+        .eq-bar:nth-child(even) { background-color: #FFD700; }
+
+        .playing .eq-bar:nth-child(1) { animation: eqBounce 0.65s infinite ease-in-out; }
+        .playing .eq-bar:nth-child(2) { animation: eqBounce 0.48s infinite ease-in-out 0.15s; }
+        .playing .eq-bar:nth-child(3) { animation: eqBounce 0.75s infinite ease-in-out 0.28s; }
+        .playing .eq-bar:nth-child(4) { animation: eqBounce 0.55s infinite ease-in-out 0.1s; }
+
+        /* Abu Dhabi Yas Marina Circuit Telemetry Animation */
+        @keyframes telemetryLap {
+            0% {
+                stroke-dashoffset: 0;
+            }
+            100% {
+                stroke-dashoffset: -1200;
+            }
+        }
+
+        .animate-racing-telemetry {
+            animation: telemetryLap 14s linear infinite;
+        }
+
+        @keyframes trackMarkerPulse {
+            0%, 100% {
+                transform: scale(1);
+                opacity: 0.9;
+            }
+            50% {
+                transform: scale(1.18);
+                opacity: 1;
+            }
+        }
+
+        .track-marker-pulse {
+            transform-origin: center;
+            animation: trackMarkerPulse 2.4s ease-in-out infinite;
+        }
+
+        /* F1 High-Speed Delivery Flyby & Speed Lines */
+        @keyframes f1CarFlyby {
+            0% {
+                transform: translate3d(-120vw, -50%, 0) scale(0.85);
+                opacity: 0;
+            }
+            8% {
+                opacity: 1;
+            }
+            88% {
+                opacity: 1;
+            }
+            100% {
+                transform: translate3d(120vw, -50%, 0) scale(1.15);
+                opacity: 0;
+            }
+        }
+
+        .animate-f1-flyby {
+            animation: f1CarFlyby 1.15s cubic-bezier(0.2, 0.05, 0.25, 1) forwards;
+        }
+
+        @keyframes f1SpeedLine {
+            0% {
+                transform: translate3d(-100vw, 0, 0) scaleX(0.2);
+                opacity: 0;
+            }
+            30% {
+                opacity: 0.95;
+                transform: translate3d(0, 0, 0) scaleX(1.8);
+            }
+            100% {
+                transform: translate3d(100vw, 0, 0) scaleX(0.4);
+                opacity: 0;
+            }
+        }
+
+        .speed-line-streak {
+            position: absolute;
+            height: 2px;
+            border-radius: 9999px;
+            animation: f1SpeedLine 0.9s cubic-bezier(0.2, 0.1, 0.25, 1) forwards;
+        }
+
+        @keyframes envelopeRumble {
+            0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+            15% { transform: translate3d(-6px, -4px, 0) rotate(-1.5deg); }
+            35% { transform: translate3d(6px, 3px, 0) rotate(1.8deg); }
+            55% { transform: translate3d(-4px, 2px, 0) rotate(-1deg); }
+            75% { transform: translate3d(3px, -2px, 0) rotate(0.6deg); }
+            90% { transform: translate3d(-1px, 1px, 0) rotate(-0.2deg); }
+        }
+
+        .f1-rumble {
+            animation: envelopeRumble 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+        }
+
+        .checkered-pattern-dark {
+            background-image:
+                linear-gradient(45deg, #1a1a2e 25%, transparent 25%),
+                linear-gradient(-45deg, #1a1a2e 25%, transparent 25%),
+                linear-gradient(45deg, transparent 75%, #1a1a2e 75%),
+                linear-gradient(-45deg, transparent 75%, #1a1a2e 75%);
+            background-color: #EAF2FF;
+            background-size: 8px 8px;
+            background-position: 0 0, 0 4px, 4px -4px, -4px 0px;
+        }
+
+        /* Custom Racing Slider (Electric Blue Track & Yellow Thumb) */
+        input[type="range"].racing-slider {
+            -webkit-appearance: none;
+            appearance: none;
+            height: 5px;
+            border-radius: 9999px;
+            background: #003DA5;
+            outline: none;
+            cursor: pointer;
+        }
+
+        input[type="range"].racing-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #FFD700;
+            border: 2px solid #E10600;
+            box-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+            cursor: pointer;
+            transition: transform 0.15s ease;
+        }
+
+        input[type="range"].racing-slider::-webkit-slider-thumb:hover {
+            transform: scale(1.25);
+        }
+
+        input[type="range"].racing-slider::-moz-range-thumb {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #FFD700;
+            border: 2px solid #E10600;
+            box-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+            cursor: pointer;
+        }
+
+        /* Polaroid Scrapbook Card with Racing Touches */
+        .polaroid-card {
+            background: #FFFFFF;
+            padding: 11px 11px 32px 11px;
+            border-radius: 10px;
+            border: 1px solid rgba(22, 119, 255, 0.35);
+            box-shadow: 0 12px 28px -8px rgba(7, 29, 73, 0.25), 0 4px 12px -3px rgba(225, 6, 0, 0.2);
+            transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease;
+        }
+
+        .polaroid-card:hover {
+            transform: translateY(-7px) rotate(0deg) scale(1.03) !important;
+            box-shadow: 0 20px 40px -10px rgba(7, 29, 73, 0.35), 0 8px 20px -4px rgba(225, 6, 0, 0.35);
+            z-index: 20;
+        }
+
+        /* Washi Tape Scrapbook Styling (Red Bull Livery) */
+        .washi-tape-yellow {
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%) rotate(-2deg);
+            width: 72px;
+            height: 22px;
+            background: rgba(255, 215, 0, 0.94);
+            border-left: 2px dashed rgba(7, 29, 73, 0.5);
+            border-right: 2px dashed rgba(7, 29, 73, 0.5);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(2px);
+            z-index: 10;
+        }
+
+        .washi-tape-blue {
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%) rotate(2deg);
+            width: 72px;
+            height: 22px;
+            background: rgba(0, 61, 165, 0.92);
+            border-left: 2px dashed rgba(255, 215, 0, 0.7);
+            border-right: 2px dashed rgba(255, 215, 0, 0.7);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(2px);
+            z-index: 10;
+        }
+
+        .washi-tape-checkered {
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%) rotate(-1.5deg);
+            width: 76px;
+            height: 22px;
+            background-color: #FFFFFF;
+            background-image:
+                linear-gradient(45deg, #071D49 25%, transparent 25%),
+                linear-gradient(-45deg, #071D49 25%, transparent 25%),
+                linear-gradient(45deg, transparent 75%, #071D49 75%),
+                linear-gradient(-45deg, transparent 75%, #071D49 75%);
+            background-size: 8px 8px;
+            background-position: 0 0, 0 4px, 4px -4px, -4px 0px;
+            border: 1px solid rgba(225, 6, 0, 0.6);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.18);
+            z-index: 10;
+        }
+    </style>
+</head>
+
+<body class="font-sans antialiased min-h-screen flex flex-col justify-between pb-12">
+
+    <!-- Background Audio Element -->
+    <audio id="local-audio-player" src="Rex Orange County - Hannah Montana (Official Video).mp3" loop preload="auto"></audio>
+
+    <!-- Subtle F1 Racing Background Circuit Watermark & Sparkles -->
+    <div aria-hidden="true" class="fixed inset-0 pointer-events-none overflow-hidden z-0">
+        <!-- SVG F1 Circuit Track Outline in Background -->
+        <svg class="absolute -top-12 -right-24 w-[560px] h-[560px] text-electricBlue/10" viewBox="0 0 500 500" fill="none" stroke="currentColor" stroke-width="2.5" stroke-dasharray="8 6">
+            <path d="M100 240 C120 180, 200 130, 310 140 C410 150, 440 220, 420 300 C400 370, 310 430, 240 400 C180 370, 160 410, 120 380 C70 340, 80 290, 100 240 Z"/>
+        </svg>
+
+        <!-- Ambient Racing Sparkles -->
+        <span class="ambient-sparkle absolute top-[12%] left-[8%] text-redBullYellow text-xl">✦</span>
+        <span class="ambient-sparkle absolute top-[22%] right-[12%] text-racingRed text-lg" style="animation-delay: 1.1s;">★</span>
+        <span class="ambient-sparkle absolute bottom-[26%] left-[14%] text-electricBlue text-xl" style="animation-delay: 2.2s;">✦</span>
+        <span class="ambient-sparkle absolute top-[62%] right-[8%] text-redBullYellow text-base" style="animation-delay: 0.7s;">✦</span>
+        <span class="ambient-sparkle absolute top-[8%] right-[32%] text-racingRed text-sm" style="animation-delay: 1.8s;">★</span>
+    </div>
+
+    <!-- Dedicated Full-Screen Layer for Scattered Emoji Celebrations -->
+    <div id="emoji-burst-layer" aria-hidden="true"></div>
+
+    <!-- Toast Notification (Paddock Dispatch) -->
+    <div id="toast-banner" class="fixed top-5 left-1/2 -translate-x-1/2 z-50 pointer-events-none opacity-0 -translate-y-3 transition-all duration-400">
+        <div class="bg-navyCard text-iceBlue px-5 py-2.5 rounded-full shadow-2xl border border-electricBlue/60 text-xs sm:text-sm font-semibold flex items-center gap-2">
+            <span id="toast-icon">🏁</span>
+            <span id="toast-text" class="font-sans">Wish sent to the universe for Wira! ♡</span>
+        </div>
+    </div>
+
+    <!-- =========================================================
+         F1 HIGH-SPEED DELIVERY FLYBY OVERLAY
+         Dramatic race car flyby, speed lines, engine SFX
+         ========================================================= -->
+    <div id="f1-flyby-overlay" class="fixed inset-0 z-50 pointer-events-auto opacity-0 transition-opacity duration-300 hidden overflow-hidden bg-navyBg/60 backdrop-blur-[3px] flex items-center justify-center">
+
+        <!-- Speed Lines Layer (Dynamic Streaks with Motion Blur) -->
+        <div id="f1-speed-lines-container" class="absolute inset-0 pointer-events-none overflow-hidden"></div>
+
+        <!-- Screaming F1 Race Car Unit -->
+        <div id="f1-screaming-car" class="absolute top-1/2 left-0 -translate-y-1/2 pointer-events-none will-change-transform flex items-center">
+            <!-- Exhaust Fire & Speed Blur Trail -->
+            <div class="f1-exhaust-trail flex items-center shrink-0">
+                <div class="h-[3px] w-48 sm:w-80 bg-gradient-to-r from-transparent via-racingRed to-redBullYellow rounded-full blur-[1px]"></div>
+                <div class="h-[7px] w-32 sm:w-52 -ml-28 sm:-ml-48 bg-gradient-to-r from-transparent via-redBullYellow to-pureWhite rounded-full blur-[0.5px]"></div>
+                <div class="h-[12px] w-16 sm:w-24 -ml-14 sm:-ml-20 bg-gradient-to-r from-transparent via-electricBlue to-pureWhite rounded-full blur-[2px]"></div>
+            </div>
+
+            <!-- F1 Racecar Illustration -->
+            <div class="relative flex items-center -ml-8 sm:-ml-12 drop-shadow-[0_0_25px_rgba(225,6,0,0.9)]">
+                <!-- Emoji F1 car mirrored to drive forward rightwards with blur for speed -->
+                <div class="transform scale-x-[-1] text-5xl sm:text-7xl select-none filter blur-[0.3px]">
+                    🏎️
+                </div>
+
+                <!-- Driver #3 Decal Plate -->
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-midnightNavy/95 border-2 border-redBullYellow px-2.5 py-0.5 rounded-full text-[10px] sm:text-xs font-racing font-black text-redBullYellow shadow-2xl whitespace-nowrap">
+                    MV #3 🏁
+                </div>
+            </div>
+        </div>
+
+        <!-- Telemetry HUD & Status Overlay -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex items-center gap-3 bg-midnightNavy/95 border border-electricBlue/70 px-5 sm:px-6 py-2.5 rounded-full shadow-[0_0_30px_rgba(225,6,0,0.4)] backdrop-blur-md">
+            <span class="w-2.5 h-2.5 rounded-full bg-racingRed animate-ping"></span>
+            <span class="font-racing text-[10px] sm:text-xs text-pureWhite font-bold uppercase tracking-widest whitespace-nowrap">
+                F1 PADDOCK DISPATCH INBOUND
+            </span>
+            <span id="f1-telemetry-speed" class="font-racing text-xs sm:text-sm text-redBullYellow font-black tabular-nums border-l border-electricBlue/40 pl-3">
+                348 KM/H
+            </span>
+        </div>
+
+        <!-- Skip Button (Requirement 6: Sediakan opsi untuk melewati animasi jika diperlukan) -->
+        <button onclick="skipF1Intro(event)" aria-label="Skip racing intro"
+            class="absolute top-6 right-6 pointer-events-auto bg-midnightNavy/90 hover:bg-racingRed text-iceBlue hover:text-pureWhite border border-electricBlue/50 hover:border-pureWhite px-4 py-2 rounded-full text-xs font-racing font-bold shadow-2xl transition-all active:scale-95 flex items-center gap-2 backdrop-blur-md">
+            <span>Skip</span>
+            <span class="text-redBullYellow">⏩</span>
+        </button>
+    </div>
+
+    <!-- =========================================================
+         STATE 1: 3D WAX-SEALED PADDOCK ENVELOPE VIEW
+         Oracle Red Bull Racing x Max Verstappen
+         ========================================================= -->
+    <section id="envelope-stage" class="relative z-10 flex-1 flex flex-col items-center justify-center px-4 pt-8 pb-6 transition-all duration-500">
+
+        <!-- Top Grand Prix Greeting Badge -->
+        <div class="text-center mb-6">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-navyCard/90 border border-electricBlue/50 text-iceBlue text-[11px] font-racing tracking-wider uppercase mb-3 shadow-neon">
+                <span class="w-2 h-2 rounded-full bg-racingRed animate-ping"></span>
+                <span>Oracle Red Bull Racing • Paddock Spec</span>
+                <span class="text-redBullYellow font-bold">#3</span>
+            </div>
+            <h1 class="font-display text-3xl sm:text-4xl font-bold text-pureWhite tracking-tight">
+                A Little Birthday Note for You
+            </h1>
+            <p class="font-sans text-xs sm:text-sm text-electricBlue/90 mt-1.5 flex items-center justify-center gap-1.5">
+                <span>A Little Racing World, Made With Love.</span>
+                <span>🏁</span>
+            </p>
+        </div>
+
+        <!-- 3D Interactive Envelope Scene with Abu Dhabi Yas Marina Circuit in Background -->
+        <div class="envelope-scene w-full flex flex-col items-center relative my-4 sm:my-8">
+
+            <!-- YAS MARINA CIRCUIT (ABU DHABI F1) - DECISIVE CHAMPIONSHIP TRACK BEHIND ENVELOPE -->
+            <div class="circuit-yas-marina absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[98vw] max-w-[880px] pointer-events-none z-0 flex items-center justify-center select-none overflow-visible">
+                <svg viewBox="0 0 920 620" class="w-full h-auto max-h-[520px] overflow-visible" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <!-- Glowing Gradients -->
+                        <linearGradient id="ymTrackGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#1677FF" stop-opacity="0.9" />
+                            <stop offset="30%" stop-color="#FFD700" stop-opacity="0.95" />
+                            <stop offset="68%" stop-color="#E10600" stop-opacity="0.9" />
+                            <stop offset="100%" stop-color="#003DA5" stop-opacity="0.85" />
+                        </linearGradient>
+
+                        <!-- Neon Glow Filters -->
+                        <filter id="ymNeonGlow" x="-30%" y="-30%" width="160%" height="160%">
+                            <feGaussianBlur stdDeviation="6" result="blur1" />
+                            <feGaussianBlur stdDeviation="16" result="blur2" />
+                            <feMerge>
+                                <feMergeNode in="blur2" />
+                                <feMergeNode in="blur1" />
+                                <feMergeNode in="SourceGraphic" />
+                            </feMerge>
+                        </filter>
+
+                        <pattern id="ymCheckeredPattern" width="12" height="8" patternUnits="userSpaceOnUse">
+                            <rect width="6" height="4" fill="#FFFFFF" />
+                            <rect x="6" width="6" height="4" fill="#071D49" />
+                            <rect y="4" width="6" height="4" fill="#071D49" />
+                            <rect x="6" y="4" width="6" height="4" fill="#FFFFFF" />
+                        </pattern>
+                    </defs>
+
+                    <!-- Marina Basin Subtle Grid / Water Ring -->
+                    <ellipse cx="440" cy="310" rx="270" ry="185" stroke="#1677FF" stroke-opacity="0.08" stroke-width="1.5" stroke-dasharray="6 6" fill="rgba(0, 61, 165, 0.04)" />
+
+                    <!-- Track Outer Asphalt Base -->
+                    <path d="M 220 500 L 220 250 C 220 215, 195 190, 168 180 C 148 174, 150 148, 178 140 C 215 130, 275 118, 375 102 C 450 90, 495 80, 530 90 C 570 102, 570 138, 535 158 C 515 170, 495 178, 472 195 L 720 425 C 748 450, 760 470, 750 488 C 740 505, 712 508, 685 490 L 535 340 C 500 305, 455 275, 405 285 C 365 295, 345 328, 350 370 L 355 425 C 355 450, 340 460, 315 460 L 275 460 C 255 460, 245 475, 245 495 C 245 528, 230 535, 215 530 C 205 525, 205 510, 220 500 Z"
+                        stroke="#1677FF" stroke-width="18" stroke-opacity="0.12" stroke-linecap="round" stroke-linejoin="round" />
+
+                    <!-- Main Track Racing Surface with Neon Livery Glow -->
+                    <path d="M 220 500 L 220 250 C 220 215, 195 190, 168 180 C 148 174, 150 148, 178 140 C 215 130, 275 118, 375 102 C 450 90, 495 80, 530 90 C 570 102, 570 138, 535 158 C 515 170, 495 178, 472 195 L 720 425 C 748 450, 760 470, 750 488 C 740 505, 712 508, 685 490 L 535 340 C 500 305, 455 275, 405 285 C 365 295, 345 328, 350 370 L 355 425 C 355 450, 340 460, 315 460 L 275 460 C 255 460, 245 475, 245 495 C 245 528, 230 535, 215 530 C 205 525, 205 510, 220 500 Z"
+                        stroke="url(#ymTrackGrad)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#ymNeonGlow)" />
+
+                    <!-- Animated Telemetry Racing Stream (Bead of Light travelling around Yas Marina) -->
+                    <path d="M 220 500 L 220 250 C 220 215, 195 190, 168 180 C 148 174, 150 148, 178 140 C 215 130, 275 118, 375 102 C 450 90, 495 80, 530 90 C 570 102, 570 138, 535 158 C 515 170, 495 178, 472 195 L 720 425 C 748 450, 760 470, 750 488 C 740 505, 712 508, 685 490 L 535 340 C 500 305, 455 275, 405 285 C 365 295, 345 328, 350 370 L 355 425 C 355 450, 340 460, 315 460 L 275 460 C 255 460, 245 475, 245 495 C 245 528, 230 535, 215 530 C 205 525, 205 510, 220 500 Z"
+                        stroke="#FFFFFF" stroke-width="2.5" stroke-dasharray="16 240" stroke-linecap="round" class="animate-racing-telemetry" opacity="0.95" />
+
+                    <!-- Start / Finish Line Checkered Bar -->
+                    <g transform="translate(208, 370)">
+                        <rect x="-4" y="-12" width="28" height="6" fill="url(#ymCheckeredPattern)" stroke="#1677FF" stroke-width="1" rx="1" />
+                        <text x="-16" y="-18" fill="#FFD700" font-family="Orbitron, sans-serif" font-size="9" font-weight="bold" letter-spacing="1">START / FINISH 🏁</text>
+                    </g>
+
+                    <!-- Turn 5 Hairpin - World Champion Overtake Marker -->
+                    <g transform="translate(545, 90)">
+                        <circle cx="0" cy="0" r="9" fill="#E10600" stroke="#FFD700" stroke-width="2" class="track-marker-pulse" />
+                        <text x="0" y="3.5" text-anchor="middle" fill="#FFFFFF" font-family="Orbitron, sans-serif" font-size="7.5" font-weight="black">#3</text>
+                        <rect x="18" y="-24" width="186" height="38" rx="8" fill="rgba(7, 29, 73, 0.92)" stroke="#FFD700" stroke-width="1.2" />
+                        <text x="28" y="-9" fill="#FFD700" font-family="Orbitron, sans-serif" font-size="8.5" font-weight="bold">TURN 5 • MV #3 2026 🏆</text>
+                        <text x="28" y="6" fill="#EAF2FF" font-family="Poppins, sans-serif" font-size="7.5">Max Verstappen — The New Chapter</text>
+                    </g>
+
+                    <!-- Back Straight Telemetry Tag (Hidden on tiny screens to avoid clutter) -->
+                    <g transform="translate(640, 280)" class="hidden sm:inline">
+                        <line x1="0" y1="0" x2="30" y2="-18" stroke="#1677FF" stroke-width="1" stroke-dasharray="3 3" />
+                        <rect x="30" y="-32" width="160" height="26" rx="6" fill="rgba(7, 29, 73, 0.92)" stroke="#1677FF" stroke-width="1" />
+                        <text x="38" y="-17" fill="#1677FF" font-family="Orbitron, sans-serif" font-size="8" font-weight="bold">1.2 KM BACK STRAIGHT</text>
+                        <text x="38" y="-6" fill="#EAF2FF" font-family="Orbitron, sans-serif" font-size="7">DRS ZONE • 338+ KM/H</text>
+                    </g>
+
+                    <!-- Turn 9 Marsa Corner -->
+                    <g transform="translate(440, 235)" class="hidden sm:inline">
+                        <circle cx="0" cy="0" r="4" fill="#1677FF" stroke="#FFD700" stroke-width="1" />
+                        <text x="-10" y="-10" text-anchor="end" fill="#EAF2FF" font-family="Orbitron, sans-serif" font-size="7.5" font-weight="semibold" opacity="0.85">T9 MARSA CORNER</text>
+                    </g>
+
+                    <!-- Sector 3 / Marina Tag -->
+                    <g transform="translate(340, 480)" class="hidden sm:inline">
+                        <text x="0" y="0" fill="#FFD700" font-family="Orbitron, sans-serif" font-size="8" font-weight="bold" opacity="0.85">YAS MARINA &amp; W HOTEL</text>
+                        <text x="0" y="10" fill="#EAF2FF" font-family="Poppins, sans-serif" font-size="6.5" opacity="0.7">Sector 3 Championship Climax</text>
+                    </g>
+
+                    <!-- Circuit Information Badge -->
+                    <g transform="translate(45, 80)">
+                        <text x="0" y="0" fill="#FFD700" font-family="Orbitron, sans-serif" font-size="12" font-weight="900" letter-spacing="1.5">YAS MARINA CIRCUIT</text>
+                        <text x="0" y="16" fill="#1677FF" font-family="Orbitron, sans-serif" font-size="8.5" font-weight="bold" letter-spacing="1">ABU DHABI GP • 5.281 KM • 16 TURNS</text>
+                        <text x="0" y="30" fill="#EAF2FF" font-family="Poppins, sans-serif" font-size="7.5" opacity="0.75">MV #3 • Oracle Red Bull Racing 2026 🏁</text>
+                    </g>
+                </svg>
+            </div>
+
+            <!-- Envelope Wrapper (z-10 relative so it sits in front of the track) -->
+            <div id="envelope-box" onclick="openBirthdayEnvelope()" role="button" tabindex="0"
+                aria-label="Klik untuk membuka surat ulang tahun Wira"
+                class="envelope-wrapper z-10 cursor-pointer rounded-[18px] bg-navyCard shadow-envelope border border-electricBlue/40 select-none">
+
+                <!-- Inner Letter Card Preview -->
+                <div class="letter-peek p-4 flex flex-col items-center justify-start text-center">
+                    <div class="w-full h-1.5 rounded-full racing-stripes-gradient mb-2"></div>
+                    <span class="text-[9px] uppercase tracking-widest text-racingRed font-racing font-bold">Driver Letter • Pole Position</span>
+                    <p class="font-display text-lg font-bold text-midnightNavy mt-1">Happy Birthday, Wira. ♡</p>
+                    <p class="font-serif italic text-xs text-textMuted mt-0.5">To someone I wish nothing but good things for...</p>
+                </div>
+
+                <!-- Envelope Folds -->
+                <div class="envelope-pocket-left"></div>
+                <div class="envelope-pocket-right"></div>
+                <div class="envelope-pocket-bottom"></div>
+
+                <!-- Top Envelope Flap -->
+                <div class="envelope-flap"></div>
+
+                <!-- Front Address & Paddock Pass Label -->
+                <div class="absolute bottom-3.5 left-3.5 right-3.5 z-26 pointer-events-none flex items-end justify-between gap-2">
+                    <div class="bg-midnightNavy/95 backdrop-blur-sm px-3.5 py-2 rounded-xl border border-electricBlue/50 shadow-md">
+                        <div class="flex items-center gap-1.5">
+                            <span class="text-[8px] uppercase tracking-widest text-redBullYellow font-racing font-bold">DRIVER #3</span>
+                            <span class="text-[8px] text-iceBlue/70">• RBR PADDOCK</span>
+                        </div>
+                        <p class="font-display text-sm sm:text-base font-bold text-pureWhite leading-snug">
+                            Wira Saptaajip ♡
+                        </p>
+                    </div>
+
+                    <!-- Red Bull Champion Number Decal -->
+                    <div class="flex flex-col items-center justify-center w-11 h-12 shrink-0 rounded-xl border border-racingRed bg-navyBg/90 text-redBullYellow shadow-sm">
+                        <span class="font-racing text-base font-black leading-none text-redBullYellow">3</span>
+                        <span class="text-[7px] font-racing font-bold text-racingRed uppercase tracking-tighter mt-0.5">MV3</span>
+                    </div>
+                </div>
+
+                <!-- Center Red Bull Champion Wax Seal (#1 & Heart) -->
+                <div aria-hidden="true"
+                    class="wax-seal absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 sm:w-16 sm:h-16 rounded-full z-40 flex flex-col items-center justify-center border-2 border-redBullYellow/85 text-pureWhite">
+                    <span class="font-racing text-sm sm:text-base font-black leading-none text-redBullYellow drop-shadow-sm">#3</span>
+                    <span class="text-xs leading-none mt-0.5 text-pureWhite">♥</span>
+                </div>
+            </div>
+
+            <!-- Interactive Open Prompt Button -->
+            <button onclick="openBirthdayEnvelope()"
+                class="mt-6 z-20 relative group inline-flex items-center gap-2 bg-navyCard hover:bg-navySurface text-pureWhite font-sans font-semibold text-xs sm:text-sm px-6 py-2.5 rounded-full shadow-lg border border-electricBlue/60 transition-all hover:scale-105 active:scale-95">
+                <i data-lucide="mail-open" class="w-4 h-4 text-racingRed transition-transform group-hover:rotate-6"></i>
+                <span>Open Wira's Paddock Letter</span>
+                <span class="text-redBullYellow">🏁</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- =========================================================
+         STATE 2: FULL OPENED BIRTHDAY LETTER VIEW
+         Romantic Scrapbook x Oracle Red Bull Racing
+         ========================================================= -->
+    <main id="letter-stage" class="hidden relative z-10 max-w-2xl w-full mx-auto px-4 sm:px-6 pt-6 sm:pt-10 pb-8">
+
+        <!-- Top Controls: Re-fold Envelope & Sender Paddock Tag -->
+        <div class="flex items-center justify-between gap-3 mb-5">
+            <button onclick="closeBirthdayEnvelope()"
+                class="inline-flex items-center gap-1.5 text-xs font-sans font-semibold text-iceBlue bg-navyCard/90 hover:bg-navyCard border border-electricBlue/60 px-4 py-2 rounded-full shadow-md transition-all active:scale-95">
+                <i data-lucide="rotate-ccw" class="w-3.5 h-3.5 text-redBullYellow"></i>
+                <span>Lipat Kembali Amplop</span>
+            </button>
+
+            <div class="flex items-center gap-2 text-xs font-sans font-semibold text-iceBlue bg-navyCard/90 border border-electricBlue/60 px-4 py-2 rounded-full shadow-md">
+                <span class="w-2 h-2 rounded-full bg-racingRed"></span>
+                <span>From: <strong class="font-display text-pureWhite">Chumaidah</strong> ♡</span>
+            </div>
+        </div>
+
+        <!-- Scrapbook Letter Card (Crisp White/Ice Blue Paper with Racing Borders) -->
+        <article class="animate-letter-reveal bg-pureWhite rounded-3xl shadow-letter border-2 border-electricBlue/40 overflow-hidden relative">
+
+            <!-- Red Bull Racing Livery Top Trim (Red, Yellow, Blue Stripes) -->
+            <div class="h-2.5 w-full racing-stripes-gradient"></div>
+
+            <div class="p-6 sm:p-11 md:p-12 relative">
+
+                <!-- Header Badge & Title -->
+                <header class="text-center border-b border-electricBlue/20 pb-7 mb-7">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-midnightNavy text-iceBlue text-[11px] font-racing font-bold uppercase tracking-wider mb-3.5 shadow-sm">
+                        <span class="text-racingRed">🏁</span>
+                        <span>Oracle Red Bull Racing Edition • For Wira Saptaajip</span>
+                        <span class="text-redBullYellow">#3</span>
+                    </div>
+
+                    <h1 class="font-display text-3xl sm:text-5xl font-bold text-midnightNavy tracking-tight leading-tight">
+                        Happy Birthday, Wira. ♡
+                    </h1>
+                </header>
+
+                <!-- Salutation -->
+                <p class="font-display italic text-lg sm:text-xl font-semibold text-racingBlue mb-5">
+                    To someone I wish nothing but good things for,
+                </p>
+
+                <!-- Full Heartfelt Birthday Letter Body (Lora Font - Preserved 100%) -->
+                <div class="font-serif text-[15.5px] sm:text-[17px] leading-[1.85] text-textDark space-y-5">
+                    <p class="font-semibold text-midnightNavy">
+                        Selamat bertambah usia, Sayang.
+                    </p>
+
+                    <p>
+                        Di hari spesialmu ini, aku ingin mendoakan banyak hal baik untukmu. Semoga di usia yang baru,
+                        kamu selalu diberikan kesehatan, kebahagiaan, ketenangan hati, dan umur yang penuh berkah.
+                    </p>
+
+                    <p>
+                        Semoga segala hal yang sedang kamu usahakan satu per satu menemukan jalannya. Semoga setiap
+                        langkah yang kamu ambil membawa kamu lebih dekat dengan apa yang selama ini kamu impikan. Kalau
+                        ada hal-hal yang belum berhasil kamu capai tahun ini, semoga kamu selalu punya kesempatan dan
+                        kekuatan untuk mencoba lagi.
+                    </p>
+
+                    <p>
+                        Aku berharap hidup memperlakukanmu dengan baik. Semoga kamu dikelilingi orang-orang yang tulus,
+                        dipertemukan dengan banyak kesempatan baik, dan selalu memiliki alasan untuk tersenyum. Semoga
+                        ketika hari-harimu terasa berat, kamu tetap menemukan kekuatan untuk melewatinya. Dan ketika
+                        semuanya terasa melelahkan, semoga kamu tidak lupa bahwa kamu juga berhak beristirahat.
+                    </p>
+
+                    <!-- Quote Box (Lora Font - Harmonious with Main Letter Body) -->
+                    <div class="bg-gradient-to-r from-iceBlue via-iceBlue/60 to-redBullYellow/10 border-l-4 border-racingRed rounded-r-2xl px-5 py-4 my-3 shadow-xs">
+                        <div class="flex items-center gap-2 mb-2">
+                            <!-- Animated red "REC" indicator dot -->
+                            <span class="relative flex h-2.5 w-2.5 shrink-0">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-racingRed opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-racingRed"></span>
+                            </span>
+                            <!-- F1 Team Radio label — Orbitron, uppercase, spaced, red -->
+                            <span class="font-racing text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.18em] text-racingRed leading-none">
+                                TEAM RADIO
+                            </span>
+                            <span class="font-racing text-[10px] sm:text-[11px] text-textMuted/70 tracking-[0.08em] uppercase leading-none">
+                                · CHUMAIDAH → WIRA
+                            </span>
+                            <i data-lucide="radio" class="w-3 h-3 text-racingRed ml-auto shrink-0"></i>
+                        </div>
+                        <p class="font-serif text-[15.5px] sm:text-[17px] leading-[1.85] text-midnightNavy font-medium">
+                            Jangan terlalu keras sama diri sendiri, ya. Kamu tidak harus selalu punya semua jawaban,
+                            tidak harus selalu tahu ke mana arah hidup akan berjalan, dan tidak harus selalu terlihat
+                            kuat. Pelan-pelan saja. Aku harap kamu bisa menikmati setiap proses tanpa terlalu banyak
+                            menyalahkan diri sendiri.
+                        </p>
+                    </div>
+
+                    <p>
+                        Terima kasih sudah hadir dan menjadi bagian dari cerita hidupku. Aku mungkin tidak selalu bisa
+                        mengungkapkan semuanya dengan sempurna, tetapi aku sungguh berharap hal-hal baik selalu
+                        menemukanmu.
+                    </p>
+
+                    <p>
+                        Dan Sayang, ada satu hal lagi yang ingin aku sampaikan. Kamu pantas untuk dirayakan, bukan hanya
+                        hari ini, tetapi setiap hari, hanya karena kamu adalah dirimu sendiri.
+                    </p>
+
+                    <p>
+                        Kadang aku berharap bisa kembali ke masa lalu dan memberikan kepada dirimu yang lebih kecil
+                        semua perayaan ulang tahun, kejutan sederhana, dan kebahagiaan yang mungkin dulu belum sempat
+                        kamu rasakan. Aku berharap, mulai sekarang, ulang tahunmu akan selalu dipenuhi kehangatan, tawa,
+                        dan kenangan indah yang bisa kamu simpan.
+                    </p>
+
+                    <p>
+                        Sekarang kamu sudah berusia 25 tahun. Aku harap kamu tidak pernah merasa bahwa keberadaanmu
+                        adalah sesuatu yang biasa saja. Kamu begitu berarti, lebih dari yang mungkin kamu sadari. Dan
+                        aku benar-benar bersyukur karena kamu ada di dunia ini.
+                    </p>
+
+                    <p>
+                        Aku mungkin tidak bisa memberikan segalanya, tetapi aku berharap bisa menghadirkan banyak momen
+                        yang membuatmu merasa istimewa dan mengingatkanmu bahwa kamu layak mendapatkan kebahagiaan.
+                    </p>
+
+                    <p>
+                        Semoga tahun ini membawa lebih banyak kebahagiaan daripada kesedihan, lebih banyak ketenangan
+                        daripada kekhawatiran, dan lebih banyak alasan untuk bersyukur.
+                    </p>
+
+                    <div class="pt-2 space-y-2 font-medium text-textDark">
+                        <p class="text-racingRed font-semibold">
+                            Please be happy, Sayang. You deserve good things, always.
+                        </p>
+                        <p>
+                            Selamat ulang tahun sekali lagi. Semoga semua doa baik yang diam-diam kamu simpan bisa
+                            menemukan jalannya untuk menjadi nyata.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- =========================================================
+                     POLAROID KEEPSAKE GALLERY (F1 RACING SCRAPBOOK)
+                     All Photos & Captions Preserved 100%
+                     ========================================================= -->
+                <section aria-label="Polaroid Keepsake Gallery" class="mt-10 pt-8 border-t border-electricBlue/20">
+                    <div class="text-center mb-7">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-midnightNavy text-redBullYellow text-[11px] font-racing font-bold uppercase tracking-wider">
+                            <i data-lucide="flag" class="w-3 h-3 text-racingRed"></i>
+                            Pit Lane Archive • Pole Position Memories
+                        </div>
+                        <h2 class="font-display text-2xl sm:text-3xl font-bold text-midnightNavy mt-2">
+                            His Favorite World &amp; Silly Moments ♡
+                        </h2>
+                        <p class="text-xs text-textMuted mt-1 font-sans">
+                            Klik foto untuk melihat dalam ukuran penuh ✨
+                        </p>
+                    </div>
+
+                    <!-- Featured Polaroid: Formula 1 (Max Verstappen) -->
+                    <div class="max-w-[310px] sm:max-w-[340px] mx-auto mb-8">
+                        <div onclick="openLightbox(0)" role="button" tabindex="0"
+                            class="polaroid-card relative cursor-pointer group" style="transform: rotate(-1.2deg);">
+                            <div class="washi-tape-checkered"></div>
+                            <div class="w-full aspect-[736/909] overflow-hidden rounded-md bg-navyBg flex items-center justify-center relative border border-electricBlue/30">
+                                <img id="polaroid-img-0" src="_.jpeg" alt="Max Verstappen Oracle Red Bull Racing"
+                                    class="w-full h-full object-cover">
+                                <span class="absolute bottom-2.5 right-2.5 bg-midnightNavy/85 text-redBullYellow text-[9px] font-racing font-bold px-2 py-0.5 rounded border border-redBullYellow/40">
+                                    VER 3 🏁
+                                </span>
+                            </div>
+                            <p class="font-display italic font-semibold text-sm sm:text-base text-center text-midnightNavy mt-3 leading-snug">
+                                A little world of speed and passion 🏎️💨
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 3-Card Polaroid Grid: Wira's Silly & Cute Selfies -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-4 items-start">
+                        <!-- Polaroid 1: Pose Metal -->
+                        <div onclick="openLightbox(1)" role="button" tabindex="0"
+                            class="polaroid-card relative cursor-pointer max-w-[260px] sm:max-w-none mx-auto w-full"
+                            style="transform: rotate(-2.2deg);">
+                            <div class="washi-tape-yellow"></div>
+                            <div class="w-full aspect-[4/5] overflow-hidden rounded-md bg-iceBlue flex items-center justify-center relative border border-electricBlue/20">
+                                <img id="polaroid-img-1" src="80716742512__B91136B5-D026-4A53-811E-9381EEAA7497.fullsizerender.jpeg"
+                                    alt="Wira pose metal" class="w-full h-full object-cover">
+                            </div>
+                            <p class="font-display italic font-semibold text-xs sm:text-sm text-center text-midnightNavy mt-3 leading-snug">
+                                My favorite human, in his silly era 🤘🏻
+                            </p>
+                        </div>
+
+                        <!-- Polaroid 2: Pose Peace -->
+                        <div onclick="openLightbox(2)" role="button" tabindex="0"
+                            class="polaroid-card relative cursor-pointer max-w-[260px] sm:max-w-none mx-auto w-full sm:mt-2"
+                            style="transform: rotate(1.8deg);">
+                            <div class="washi-tape-blue"></div>
+                            <div class="w-full aspect-[4/5] overflow-hidden rounded-md bg-iceBlue flex items-center justify-center relative border border-electricBlue/20">
+                                <img id="polaroid-img-2" src="80898225515__50EB6B6F-90AD-4966-9680-24E90F21C773.fullsizerender.jpeg"
+                                    alt="Wira pose peace" class="w-full h-full object-cover">
+                            </div>
+                            <p class="font-display italic font-semibold text-xs sm:text-sm text-center text-midnightNavy mt-3 leading-snug">
+                                Caught being adorable again, as always ♡
+                            </p>
+                        </div>
+
+                        <!-- Polaroid 3: Pose Jahil -->
+                        <div onclick="openLightbox(3)" role="button" tabindex="0"
+                            class="polaroid-card relative cursor-pointer max-w-[260px] sm:max-w-none mx-auto w-full"
+                            style="transform: rotate(-1.5deg);">
+                            <div class="washi-tape-checkered" style="transform: translateX(-50%) rotate(2.5deg);"></div>
+                            <div class="w-full aspect-[4/5] overflow-hidden rounded-md bg-iceBlue flex items-center justify-center relative border border-electricBlue/20">
+                                <img id="polaroid-img-3" src="81502854787__43BA9D53-E365-4DA0-81A3-72C392820226.fullsizerender.jpeg"
+                                    alt="Wira pose jahil" class="w-full h-full object-cover">
+                            </div>
+                            <p class="font-display italic font-semibold text-xs sm:text-sm text-center text-midnightNavy mt-3 leading-snug">
+                                Certified little troublemaker 😈
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Clean Serif Sign-off -->
+                <div class="mt-10 pt-6 border-t border-electricBlue/20 flex flex-col sm:flex-row sm:items-end justify-between gap-5">
+                    <div>
+                        <p class="font-serif italic text-textMuted text-sm">With love,</p>
+                        <p class="font-display text-2xl sm:text-3xl font-bold text-racingBlue mt-1 tracking-tight">
+                            Ncum ♡
+                        </p>
+                    </div>
+
+                    <!-- Interactive Keepsake Buttons (Poppins font) -->
+                    <div class="flex flex-wrap items-center gap-3">
+                        <button onclick="makeBirthdayWish()"
+                            class="inline-flex items-center gap-2 bg-gradient-to-r from-racingBlue to-electricBlue hover:from-electricBlue hover:to-racingBlue text-pureWhite font-sans font-semibold text-xs sm:text-sm px-5 py-2.5 rounded-full shadow-md transition-all transform hover:scale-105 active:scale-95 border border-iceBlue/30">
+                            <span>Make a Birthday Wish</span>
+                            <span class="text-redBullYellow">✨</span>
+                        </button>
+                        <button onclick="sendHugAndHearts()"
+                            class="inline-flex items-center gap-2 bg-gradient-to-r from-racingRed to-[#FF2A24] hover:from-[#c20500] hover:to-racingRed text-pureWhite font-sans font-semibold text-xs sm:text-sm px-5 py-2.5 rounded-full shadow-md transition-all transform hover:scale-105 active:scale-95">
+                            <span>Send a Hug &amp; Hearts</span>
+                            <span>♡</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+    </main>
+
+    <!-- =========================================================
+         UNIFIED F1 RACING MUSIC PLAYER
+         Hannah Montana — Rex Orange County (Single Functional Player)
+         Animated 🏎️ Race Car syncs directly with audio progress
+         ========================================================= -->
+    <section id="spotify-racing-section" class="hidden max-w-2xl w-full mx-auto px-4 sm:px-6 pb-12 mt-0">
+        <div class="relative overflow-hidden rounded-3xl border border-electricBlue/40 bg-gradient-to-br from-navyBg via-midnightNavy to-navyCard shadow-2xl">
+
+            <!-- Racing Track Top Bar (Checkered Flag Strip) -->
+            <div class="h-3 w-full flex">
+                <div class="flex-1 checkered-pattern-dark"></div>
+                <div class="w-1/2 racing-stripes-gradient"></div>
+                <div class="flex-1 checkered-pattern-dark"></div>
+            </div>
+
+            <!-- Section Header with #3 Racer Badge -->
+            <div class="relative px-5 sm:px-6 pt-5 pb-2 flex items-center justify-between gap-3">
+                <div class="flex items-center gap-3 min-w-0">
+                    <!-- MV #3 Driver Plate -->
+                    <div class="flex flex-col items-center justify-center w-10 h-11 rounded-xl bg-racingRed border-2 border-redBullYellow shadow-lg shrink-0">
+                        <span class="font-racing text-lg font-black leading-none text-redBullYellow drop-shadow-sm">#3</span>
+                        <span class="text-[6px] font-racing font-bold text-white uppercase tracking-tight">MV</span>
+                    </div>
+                    <div class="min-w-0">
+                        <div class="flex items-center gap-1.5 mb-0.5 flex-wrap">
+                            <span class="text-[9px] font-racing font-bold uppercase tracking-widest text-racingRed">🏁 PADDOCK MUSIC</span>
+                            <span class="text-[9px] font-racing font-bold text-redBullYellow uppercase tracking-wider">• Max Verstappen #3</span>
+                        </div>
+                        <h3 class="font-display text-sm sm:text-base font-bold text-pureWhite leading-snug">
+                            For the little boy who deserved to be celebrated all along ♡
+                        </h3>
+                    </div>
+                </div>
+                <!-- Green Light Start Indicator -->
+                <div class="shrink-0 flex gap-1.5 items-center">
+                    <span class="w-2.5 h-2.5 rounded-full bg-green-400 shadow-[0_0_8px_rgba(74,222,128,0.8)] animate-pulse"></span>
+                    <span class="text-[9px] font-racing font-bold text-green-400 uppercase tracking-wider">ON AIR</span>
+                </div>
+            </div>
+
+            <div class="p-4 sm:p-5 pt-2">
+                <!-- Track Identity: Album Icon + Song Title + Status + Duration -->
+                <div class="flex items-center justify-between gap-3 mb-2.5">
+                    <div class="flex items-center gap-3 min-w-0">
+                        <!-- Disc Icon with Red Bull Accent -->
+                        <div id="music-disc-icon" class="w-12 h-12 rounded-2xl bg-gradient-to-br from-racingRed via-[#c20500] to-midnightNavy border-2 border-redBullYellow/60 flex items-center justify-center shrink-0 shadow-lg shadow-racingRed/30 transition-all duration-300">
+                            <i data-lucide="disc-3" class="w-6 h-6 text-redBullYellow"></i>
+                        </div>
+                        <div class="min-w-0">
+                            <p class="font-display font-bold text-pureWhite text-sm sm:text-base leading-tight truncate">Hannah Montana</p>
+                            <p class="font-sans text-xs text-electricBlue/90 mt-0.5 truncate">Rex Orange County</p>
+                            <div class="flex items-center gap-2 mt-1">
+                                <div id="music-eq-container" class="flex items-end gap-0.5 h-3.5">
+                                    <span class="eq-bar h-1"></span>
+                                    <span class="eq-bar h-1"></span>
+                                    <span class="eq-bar h-1"></span>
+                                    <span class="eq-bar h-1"></span>
+                                </div>
+                                <span id="music-status-text" class="text-[10px] font-racing text-iceBlue/70 uppercase tracking-wider">Ready to play ♡</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Telemetry Digital Time Readout -->
+                    <div class="text-right shrink-0">
+                        <span id="music-current-time" class="block font-racing text-electricBlue text-sm font-bold tabular-nums">0:00</span>
+                        <span id="music-duration-time" class="block font-racing text-iceBlue/50 text-[10px] tabular-nums mt-0.5">0:00</span>
+                    </div>
+                </div>
+
+                <!-- Dedicated F1 Circuit Trackway Canvas with Animated Racecar -->
+                <div class="relative w-full overflow-hidden rounded-xl bg-navyBg/85 border border-electricBlue/25 p-2 sm:p-3 my-2.5 shadow-inner">
+                    <svg id="music-track-svg" class="w-full h-[115px] sm:h-[135px] overflow-visible select-none" viewBox="0 0 600 120" preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="trackGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#E10600" stop-opacity="0.9" />
+                                <stop offset="25%" stop-color="#FFD700" stop-opacity="0.95" />
+                                <stop offset="70%" stop-color="#1677FF" stop-opacity="0.9" />
+                                <stop offset="100%" stop-color="#003DA5" stop-opacity="0.8" />
+                            </linearGradient>
+                            <filter id="spGlow" x="-20%" y="-20%" width="140%" height="140%">
+                                <feGaussianBlur stdDeviation="4" result="glow" />
+                                <feMerge>
+                                    <feMergeNode in="glow" />
+                                    <feMergeNode in="SourceGraphic" />
+                                </feMerge>
+                            </filter>
+                            <pattern id="spCheckers" width="8" height="6" patternUnits="userSpaceOnUse">
+                                <rect width="4" height="3" fill="#FFFFFF" />
+                                <rect x="4" width="4" height="3" fill="#071D49" />
+                                <rect y="3" width="4" height="3" fill="#071D49" />
+                                <rect x="4" y="3" width="4" height="3" fill="#FFFFFF" />
+                            </pattern>
+                        </defs>
+
+                        <!-- Telemetry Grid Lines -->
+                        <line x1="35" y1="20" x2="565" y2="20" stroke="#1677FF" stroke-opacity="0.08" stroke-dasharray="4 4" />
+                        <line x1="35" y1="65" x2="565" y2="65" stroke="#1677FF" stroke-opacity="0.08" stroke-dasharray="4 4" />
+                        <line x1="35" y1="105" x2="565" y2="105" stroke="#1677FF" stroke-opacity="0.08" stroke-dasharray="4 4" />
+
+                        <!-- Track Outer Glow -->
+                        <path d="M 35 65 C 100 18, 170 18, 230 65 C 290 112, 330 112, 390 65 C 445 18, 500 18, 565 65"
+                            stroke="#1677FF" stroke-width="20" stroke-opacity="0.10" stroke-linecap="round" fill="none" />
+
+                        <!-- Main Asphalt Track Surface -->
+                        <path id="f1-circuit-path" d="M 35 65 C 100 18, 170 18, 230 65 C 290 112, 330 112, 390 65 C 445 18, 500 18, 565 65"
+                            stroke="url(#trackGrad)" stroke-width="6" stroke-linecap="round" fill="none" filter="url(#spGlow)" />
+
+                        <!-- Checkered Racing Line Overlay (Curved dash line) -->
+                        <path d="M 35 65 C 100 18, 170 18, 230 65 C 290 112, 330 112, 390 65 C 445 18, 500 18, 565 65"
+                            stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="10 12" stroke-opacity="0.45" fill="none" />
+
+                        <!-- Start Line Checkered Bar (at x = 35) -->
+                        <g transform="translate(31, 35)">
+                            <rect x="0" y="0" width="8" height="60" fill="url(#spCheckers)" rx="1.5" stroke="#1677FF" stroke-width="1" />
+                            <text x="4" y="-7" text-anchor="middle" fill="#FFD700" font-family="'Orbitron', sans-serif" font-size="8" font-weight="bold" letter-spacing="0.5">START 🏁</text>
+                        </g>
+
+                        <!-- Turn 1 Marker -->
+                        <g transform="translate(135, 18)">
+                            <circle cx="0" cy="0" r="4.5" fill="#E10600" stroke="#FFD700" stroke-width="1.2" />
+                            <text x="0" y="-8" text-anchor="middle" fill="#EAF2FF" font-family="'Orbitron', sans-serif" font-size="7" font-weight="bold">T1</text>
+                        </g>
+
+                        <!-- Turn 2 Marker -->
+                        <g transform="translate(310, 112)">
+                            <circle cx="0" cy="0" r="4.5" fill="#FFD700" stroke="#071D49" stroke-width="1.2" />
+                            <text x="0" y="14" text-anchor="middle" fill="#EAF2FF" font-family="'Orbitron', sans-serif" font-size="7" font-weight="bold">T2</text>
+                        </g>
+
+                        <!-- DRS Zone Badge -->
+                        <g transform="translate(420, 26)">
+                            <rect x="-24" y="-8" width="48" height="14" rx="4" fill="rgba(0, 61, 165, 0.7)" stroke="#1677FF" stroke-width="0.8" />
+                            <text x="0" y="2" text-anchor="middle" dominant-baseline="central" fill="#1677FF" font-family="'Orbitron', sans-serif" font-size="6.5" font-weight="bold">DRS ZONE</text>
+                        </g>
+
+                        <!-- Finish Line Checkered Bar (at x = 565) -->
+                        <g transform="translate(561, 35)">
+                            <rect x="0" y="0" width="8" height="60" fill="url(#spCheckers)" rx="1.5" stroke="#1677FF" stroke-width="1" />
+                            <text x="4" y="-7" text-anchor="middle" fill="#FFD700" font-family="'Orbitron', sans-serif" font-size="8" font-weight="bold" letter-spacing="0.5">FINISH 🏁</text>
+                        </g>
+
+                        <!-- Dynamic Animated F1 Racecar Group (Follows Track Curve) -->
+                        <g id="f1-racecar-group" transform="translate(35, 65)">
+                            <ellipse cx="-16" cy="0" rx="10" ry="4.5" fill="#E10600" opacity="0.8" filter="url(#spGlow)"></ellipse>
+                            <ellipse cx="-10" cy="0" rx="6" ry="2.5" fill="#FFD700" opacity="0.95"></ellipse>
+                            <g transform="scale(-1, 1)">
+                                <text x="0" y="2" text-anchor="middle" dominant-baseline="central" font-size="28" style="filter: drop-shadow(0 3px 6px rgba(0,0,0,0.85));">🏎️</text>
+                            </g>
+                            <g transform="translate(0, -18)">
+                                <rect x="-13" y="-8" width="26" height="15" rx="4" fill="#071D49" stroke="#FFD700" stroke-width="1.2" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.6));"></rect>
+                                <text x="0" y="1.5" text-anchor="middle" dominant-baseline="central" fill="#FFD700" font-family="'Orbitron', sans-serif" font-size="8.5" font-weight="900">#3</text>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+
+                <!-- Interactive Progress Seek Bar (Slider) -->
+                <div class="flex items-center gap-2.5 my-2">
+                    <span id="music-time-mobile-left" class="font-racing text-[10px] text-electricBlue font-semibold tabular-nums w-8 text-right sm:hidden">0:00</span>
+                    <div class="relative flex-1 group">
+                        <input id="music-seek-bar" type="range" min="0" max="100" value="0" step="0.1"
+                            oninput="seekLocalAudio(this.value)"
+                            class="racing-slider w-full cursor-pointer">
+                    </div>
+                    <span id="music-time-mobile-right" class="font-racing text-[10px] text-iceBlue/50 tabular-nums w-8 sm:hidden">0:00</span>
+                </div>
+
+                <!-- Play Controls Row -->
+                <div class="flex items-center justify-between gap-3 pt-1">
+                    <div class="flex items-center gap-1.5 shrink-0">
+                        <span class="font-racing text-[9px] font-bold text-redBullYellow uppercase tracking-widest">Oracle RBR</span>
+                        <span class="font-racing text-[9px] text-iceBlue/50">• Paddock Audio</span>
+                    </div>
+
+                    <!-- Main Play/Pause Button -->
+                    <button id="music-play-btn" onclick="toggleLocalAudio()"
+                        class="inline-flex items-center gap-2 bg-racingRed hover:bg-[#c20500] text-pureWhite font-sans font-bold text-xs sm:text-sm px-6 py-2.5 rounded-full shadow-lg shadow-racingRed/50 transition-all active:scale-95 hover:scale-105 border border-redBullYellow/40">
+                        <i id="music-play-icon" data-lucide="play" class="w-4 h-4 fill-current"></i>
+                        <span id="music-play-label">Play</span>
+                    </button>
+
+                    <div class="flex items-center gap-2 shrink-0">
+                        <span class="font-racing text-[9px] text-redBullYellow font-bold uppercase tracking-wider">MV #3</span>
+                        <span class="font-racing text-[9px] text-iceBlue/50">2026</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Racing Stripe -->
+            <div class="h-2 w-full racing-stripes-gradient"></div>
+        </div>
+    </section>
+
+    <!-- =========================================================
+         CLICK-TO-ZOOM POLAROID LIGHTBOX MODAL
+         ========================================================= -->
+    <div id="polaroid-lightbox" onclick="closeLightbox(event)"
+        class="hidden fixed inset-0 z-50 bg-navyBg/85 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6">
+        <div class="relative bg-pureWhite p-3.5 sm:p-4 pb-6 rounded-2xl max-w-md w-full shadow-2xl border border-electricBlue/50 transform transition-all"
+            onclick="event.stopPropagation()">
+            <button onclick="closeLightbox()" aria-label="Close photo preview"
+                class="absolute -top-3.5 -right-3.5 w-9 h-9 rounded-full bg-racingRed hover:bg-[#ba0500] text-pureWhite flex items-center justify-center shadow-lg transition-transform hover:scale-110">
+                <i data-lucide="x" class="w-4 h-4"></i>
+            </button>
+            <div class="w-full max-h-[68vh] overflow-hidden rounded-xl bg-midnightNavy flex items-center justify-center">
+                <img id="lightbox-img" src="" alt="Expanded keepsake photo"
+                    class="w-full h-full max-h-[68vh] object-contain">
+            </div>
+            <p id="lightbox-caption"
+                class="font-display italic font-semibold text-lg sm:text-xl text-center text-midnightNavy mt-3.5 leading-snug">
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // =========================================================
+        // 1. 3D ENVELOPE OPEN / CLOSE ANIMATION & FLOW
+        // =========================================================
+        let isEnvelopeOpen = false;
+        let hasPlayedF1Flyby = false;
+        let f1FlybyTimeoutId = null;
+        let f1SpeedIntervalId = null;
+        const envelopeBox = document.getElementById('envelope-box');
+        const envelopeStage = document.getElementById('envelope-stage');
+        const letterStage = document.getElementById('letter-stage');
+
+        if (envelopeBox) {
+            envelopeBox.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    openBirthdayEnvelope();
+                }
+            });
+        }
+
+        function triggerF1SpeedLines() {
+            const container = document.getElementById('f1-speed-lines-container');
+            if (!container) return;
+            container.innerHTML = '';
+            const lineColors = [
+                'rgba(225, 6, 0, 0.85)',
+                'rgba(255, 215, 0, 0.9)',
+                'rgba(22, 119, 255, 0.85)',
+                'rgba(255, 255, 255, 0.95)'
+            ];
+            for (let i = 0; i < 18; i++) {
+                const line = document.createElement('div');
+                line.className = 'speed-line-streak';
+                const topPercent = Math.random() * 88 + 6;
+                const width = Math.random() * 220 + 100;
+                const color = lineColors[Math.floor(Math.random() * lineColors.length)];
+                const delay = Math.random() * 0.4;
+                const duration = Math.random() * 0.35 + 0.55;
+
+                line.style.top = `${topPercent}%`;
+                line.style.left = '0%';
+                line.style.width = `${width}px`;
+                line.style.background = `linear-gradient(90deg, transparent, ${color}, transparent)`;
+                line.style.animationDelay = `${delay}s`;
+                line.style.animationDuration = `${duration}s`;
+                container.appendChild(line);
+            }
+        }
+
+        function skipF1Intro(e) {
+            if (e) e.stopPropagation();
+            if (f1FlybyTimeoutId) clearTimeout(f1FlybyTimeoutId);
+            if (f1SpeedIntervalId) clearInterval(f1SpeedIntervalId);
+
+            const overlay = document.getElementById('f1-flyby-overlay');
+            if (overlay) {
+                overlay.classList.add('opacity-0');
+                setTimeout(() => overlay.classList.add('hidden'), 200);
+            }
+
+            finalizeLetterReveal();
+        }
+
+        function finalizeLetterReveal() {
+            if (!envelopeBox) return;
+
+            // 1. Trigger 3D envelope fold open animation & wax seal pop
+            envelopeBox.classList.add('is-open');
+
+            // 2. Play soft paper rustle & celebratory chime
+            playOpenEnvelopeSFX();
+
+            // 3. Auto-play birthday song (starts playing as letter reveals)
+            playLocalAudio();
+
+            // 4. Scatter celebratory F1 racing & hearts confetti
+            burstHearts(28, ['🏁', '🏎️', '🏆', '❤️', '💙', '💛', '✨', '🔥']);
+
+            // 5. Smoothly transition to full letter card & racing section
+            setTimeout(() => {
+                envelopeStage.classList.add('opacity-0', 'scale-95', 'pointer-events-none');
+                setTimeout(() => {
+                    envelopeStage.classList.add('hidden');
+                    letterStage.classList.remove('hidden');
+
+                    // Show Spotify / Racing section
+                    const spotifySection = document.getElementById('spotify-racing-section');
+                    if (spotifySection) {
+                        spotifySection.classList.remove('hidden');
+                        setTimeout(() => {
+                            cachedTrackLength = 0;
+                            const frac = (localAudio && localAudio.duration) ? (localAudio.currentTime / localAudio.duration) : 0;
+                            updateRaceCar(frac);
+                        }, 80);
+                    }
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }, 400);
+            }, 1250);
+        }
+
+        function openBirthdayEnvelope() {
+            if (isEnvelopeOpen) return;
+            isEnvelopeOpen = true;
+
+            // FIRST TIME OPEN: Run full dramatic F1 acceleration flyby cutscene!
+            if (!hasPlayedF1Flyby) {
+                hasPlayedF1Flyby = true;
+
+                const overlay = document.getElementById('f1-flyby-overlay');
+                const car = document.getElementById('f1-screaming-car');
+                const speedText = document.getElementById('f1-telemetry-speed');
+
+                if (overlay && car) {
+                    overlay.classList.remove('hidden');
+                    void overlay.offsetWidth;
+                    overlay.classList.remove('opacity-0');
+
+                    // Spawn motion blur speed lines
+                    triggerF1SpeedLines();
+
+                    // Play screaming V6 turbo acceleration audio
+                    playF1EngineSound();
+
+                    // Telemetry live acceleration counter
+                    let currentSpeed = 288;
+                    f1SpeedIntervalId = setInterval(() => {
+                        currentSpeed += Math.floor(Math.random() * 8 + 5);
+                        if (currentSpeed > 356) currentSpeed = 356;
+                        if (speedText) speedText.textContent = `${currentSpeed} KM/H`;
+                    }, 55);
+
+                    // Start car flyby
+                    car.classList.remove('animate-f1-flyby');
+                    void car.offsetWidth;
+                    car.classList.add('animate-f1-flyby');
+
+                    // Midpoint: car rushes past envelope -> aerodynamic shockwave shake
+                    setTimeout(() => {
+                        if (envelopeBox) {
+                            envelopeBox.classList.add('f1-rumble');
+                        }
+                        burstHearts(18, ['🏁', '🏎️', '🔥', '✨', '🏆']);
+                    }, 500);
+
+                    // Flyby finishes -> fade overlay and smoothly reveal letter
+                    f1FlybyTimeoutId = setTimeout(() => {
+                        if (f1SpeedIntervalId) clearInterval(f1SpeedIntervalId);
+                        overlay.classList.add('opacity-0');
+                        setTimeout(() => {
+                            overlay.classList.add('hidden');
+                        }, 280);
+                        finalizeLetterReveal();
+                    }, 1120);
+
+                    return;
+                }
+            }
+
+            // Subsequent re-opens: Smooth direct opening
+            finalizeLetterReveal();
+        }
+
+        function closeBirthdayEnvelope() {
+            isEnvelopeOpen = false;
+            letterStage.classList.add('hidden');
+
+            // Hide Spotify Racing section
+            const spotifySection = document.getElementById('spotify-racing-section');
+            if (spotifySection) spotifySection.classList.add('hidden');
+
+            envelopeStage.classList.remove('hidden');
+
+            void envelopeStage.offsetWidth;
+            envelopeStage.classList.remove('opacity-0', 'scale-95', 'pointer-events-none');
+
+            // Pause music when envelope is closed (folded back)
+            const localAudio = document.getElementById('local-audio-player');
+            if (localAudio && !localAudio.paused) {
+                localAudio.pause();
+                updatePlayerUI(false);
+            }
+
+            setTimeout(() => {
+                if (envelopeBox) {
+                    envelopeBox.classList.remove('is-open');
+                    envelopeBox.classList.remove('f1-rumble');
+                }
+            }, 120);
+        }
+
+        // =========================================================
+        // 2. POLAROID GALLERY & LIGHTBOX MODAL
+        // Captions & Photos Preserved 100%
+        // =========================================================
+        const polaroidItems = [
+            { src: '_.jpeg', caption: 'A little world of speed and passion 🏎️💨' },
+            { src: '80716742512__B91136B5-D026-4A53-811E-9381EEAA7497.fullsizerender.jpeg', caption: 'My favorite human, in his silly era 🤘🏻' },
+            { src: '80898225515__50EB6B6F-90AD-4966-9680-24E90F21C773.fullsizerender.jpeg', caption: 'Caught being adorable again, as always ♡' },
+            { src: '81502854787__43BA9D53-E365-4DA0-81A3-72C392820226.fullsizerender.jpeg', caption: 'Certified little troublemaker 😈' }
+        ];
+
+        function openLightbox(index) {
+            const item = polaroidItems[index];
+            if (!item) return;
+
+            const modal = document.getElementById('polaroid-lightbox');
+            const modalImg = document.getElementById('lightbox-img');
+            const cap = document.getElementById('lightbox-caption');
+
+            modalImg.src = item.src;
+            cap.textContent = item.caption;
+            modal.classList.remove('hidden');
+        }
+
+        function closeLightbox(event) {
+            if (!event || event.target.id === 'polaroid-lightbox') {
+                document.getElementById('polaroid-lightbox').classList.add('hidden');
+            }
+        }
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        // =========================================================
+        // 3. KEEPSAKE WISH, HUG & TOAST INTERACTIONS
+        // =========================================================
+        let toastTimeout = null;
+
+        function showToast(message, icon = '🏁') {
+            const toast = document.getElementById('toast-banner');
+            document.getElementById('toast-text').textContent = message;
+            document.getElementById('toast-icon').textContent = icon;
+
+            toast.classList.remove('opacity-0', '-translate-y-3');
+            toast.classList.add('opacity-100', 'translate-y-0');
+
+            clearTimeout(toastTimeout);
+            toastTimeout = setTimeout(() => {
+                toast.classList.remove('opacity-100', 'translate-y-0');
+                toast.classList.add('opacity-0', '-translate-y-3');
+            }, 3400);
+        }
+
+        function makeBirthdayWish() {
+            playWishChimeSFX();
+            burstHearts(32, ['✨', '🌟', '🏆', '🏁', '🏎️', '💙', '💛']);
+            showToast('Birthday wish sent to the universe for Wira! ✨', '🏎️');
+        }
+
+        function sendHugAndHearts() {
+            playWishChimeSFX();
+            burstHearts(34, ['♡', '❤️', '💙', '💛', '🤍', '🫂', '🏁']);
+            showToast('Sending a giant warm hug & endless love to Wira! ♡', '❤️');
+        }
+
+        function burstHearts(count = 26, symbols = ['🏁', '🏎️', '🏆', '❤️', '💙', '💛', '✨', '🔥']) {
+            const burstLayer = document.getElementById('emoji-burst-layer');
+            if (!burstLayer) return;
+
+            for (let i = 0; i < count; i++) {
+                setTimeout(() => {
+                    const el = document.createElement('span');
+                    el.className = 'floating-heart text-pureWhite';
+                    el.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+
+                    const sliceWidth = 90 / count;
+                    const baseLeft = 4 + (i * sliceWidth);
+                    const jitter = (Math.random() - 0.5) * sliceWidth * 1.4;
+                    const leftPos = Math.min(94, Math.max(4, baseLeft + jitter));
+
+                    const startBottom = -(Math.random() * 45 + 24);
+                    const size = Math.random() * 16 + 18;
+                    const duration = Math.random() * 2.2 + 2.8;
+
+                    const swayMid = (Math.random() - 0.5) * 90;
+                    const swayEnd = (Math.random() - 0.5) * 120;
+                    const rotMid = (Math.random() - 0.5) * 50;
+                    const rotEnd = (Math.random() - 0.5) * 80;
+
+                    el.style.left = `${leftPos.toFixed(2)}vw`;
+                    el.style.bottom = `${startBottom.toFixed(0)}px`;
+                    el.style.fontSize = `${size.toFixed(0)}px`;
+                    el.style.animationDuration = `${duration.toFixed(2)}s`;
+                    el.style.setProperty('--sway-mid', `${swayMid.toFixed(0)}px`);
+                    el.style.setProperty('--sway-end', `${swayEnd.toFixed(0)}px`);
+                    el.style.setProperty('--rot-mid', `${rotMid.toFixed(0)}deg`);
+                    el.style.setProperty('--rot-end', `${rotEnd.toFixed(0)}deg`);
+
+                    burstLayer.appendChild(el);
+                    setTimeout(() => el.remove(), (duration + 0.2) * 1000);
+                }, i * 60);
+            }
+        }
+
+        // =========================================================
+        // 4. AUDIO SFX (WARM ENVELOPE RUSTLE & CHIME)
+        // =========================================================
+        let audioCtx = null;
+
+        function initAudioContext() {
+            if (!audioCtx) {
+                const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+                audioCtx = new AudioContextClass();
+            }
+            if (audioCtx.state === 'suspended') {
+                audioCtx.resume();
+            }
+        }
+
+        function playOpenEnvelopeSFX() {
+            initAudioContext();
+            if (!audioCtx) return;
+            const now = audioCtx.currentTime;
+
+            const bufferSize = audioCtx.sampleRate * 0.28;
+            const buffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+            const data = buffer.getChannelData(0);
+            for (let i = 0; i < bufferSize; i++) {
+                data[i] = (Math.random() * 2 - 1) * Math.sin((i / bufferSize) * Math.PI);
+            }
+            const noise = audioCtx.createBufferSource();
+            noise.buffer = buffer;
+
+            const filter = audioCtx.createBiquadFilter();
+            filter.type = 'bandpass';
+            filter.frequency.setValueAtTime(1800, now);
+
+            const noiseGain = audioCtx.createGain();
+            noiseGain.gain.setValueAtTime(0.08, now);
+            noiseGain.gain.exponentialRampToValueAtTime(0.001, now + 0.28);
+
+            noise.connect(filter);
+            filter.connect(noiseGain);
+            noiseGain.connect(audioCtx.destination);
+            noise.start(now);
+
+            const chimeNotes = [523.25, 659.25, 783.99, 987.77];
+            chimeNotes.forEach((freq, idx) => {
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(freq, now + idx * 0.08);
+
+                gain.gain.setValueAtTime(0.0001, now + idx * 0.08);
+                gain.gain.exponentialRampToValueAtTime(0.06, now + idx * 0.08 + 0.02);
+                gain.gain.exponentialRampToValueAtTime(0.0001, now + idx * 0.08 + 0.65);
+
+                osc.connect(gain);
+                gain.connect(audioCtx.destination);
+                osc.start(now + idx * 0.08);
+                osc.stop(now + idx * 0.08 + 0.7);
+            });
+        }
+
+        function playWishChimeSFX() {
+            initAudioContext();
+            if (!audioCtx) return;
+            const now = audioCtx.currentTime;
+            const notes = [659.25, 783.99, 987.77, 1174.66];
+            notes.forEach((freq, idx) => {
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(freq, now + idx * 0.065);
+                gain.gain.setValueAtTime(0.0001, now + idx * 0.065);
+                gain.gain.exponentialRampToValueAtTime(0.05, now + idx * 0.065 + 0.02);
+                gain.gain.exponentialRampToValueAtTime(0.0001, now + idx * 0.065 + 0.5);
+                osc.connect(gain);
+                gain.connect(audioCtx.destination);
+                osc.start(now + idx * 0.065);
+                osc.stop(now + idx * 0.065 + 0.55);
+            });
+        }
+
+        // Realistic F1 V6 Turbo Hybrid Engine Flyby Sound (Acceleration & Stereo Pan)
+        function playF1EngineSound() {
+            initAudioContext();
+            if (!audioCtx) return;
+            const now = audioCtx.currentTime;
+
+            // Dual detuned screaming V6 turbo oscillators for roaring chorusing
+            [1.0, 1.015].forEach(detune => {
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                const filter = audioCtx.createBiquadFilter();
+
+                osc.type = 'sawtooth';
+
+                // Pitch envelope: idle rev -> hard acceleration upshift -> screaming high gear flyby -> Doppler drop
+                osc.frequency.setValueAtTime(145 * detune, now);
+                osc.frequency.exponentialRampToValueAtTime(320 * detune, now + 0.32);
+                osc.frequency.setValueAtTime(270 * detune, now + 0.35); // Gear shift dip
+                osc.frequency.exponentialRampToValueAtTime(640 * detune, now + 0.72); // Peak rev screams across screen
+                osc.frequency.exponentialRampToValueAtTime(260 * detune, now + 1.25); // Doppler slide past camera
+
+                // Low-pass filter to sculpt harsh raw sawtooth into authentic F1 exhaust timbre
+                filter.type = 'lowpass';
+                filter.frequency.setValueAtTime(800, now);
+                filter.frequency.exponentialRampToValueAtTime(3800, now + 0.7);
+                filter.frequency.exponentialRampToValueAtTime(1100, now + 1.25);
+
+                // Volume envelope
+                gain.gain.setValueAtTime(0.001, now);
+                gain.gain.exponentialRampToValueAtTime(0.18, now + 0.65);
+                gain.gain.exponentialRampToValueAtTime(0.0001, now + 1.25);
+
+                // Stereo Panning (car rushes from far left to far right)
+                if (audioCtx.createStereoPanner) {
+                    const panner = audioCtx.createStereoPanner();
+                    panner.pan.setValueAtTime(-0.9, now);
+                    panner.pan.linearRampToValueAtTime(0.9, now + 1.15);
+                    osc.connect(filter);
+                    filter.connect(gain);
+                    gain.connect(panner);
+                    panner.connect(audioCtx.destination);
+                } else {
+                    osc.connect(filter);
+                    filter.connect(gain);
+                    gain.connect(audioCtx.destination);
+                }
+
+                osc.start(now);
+                osc.stop(now + 1.28);
+            });
+
+            // High-speed aerodynamic displacement / turbo air whoosh
+            const bufferSize = Math.floor(audioCtx.sampleRate * 1.15);
+            const buffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+            const data = buffer.getChannelData(0);
+            for (let i = 0; i < bufferSize; i++) {
+                data[i] = (Math.random() * 2 - 1);
+            }
+            const noise = audioCtx.createBufferSource();
+            noise.buffer = buffer;
+
+            const noiseFilter = audioCtx.createBiquadFilter();
+            noiseFilter.type = 'bandpass';
+            noiseFilter.frequency.setValueAtTime(350, now);
+            noiseFilter.frequency.exponentialRampToValueAtTime(2200, now + 0.65);
+            noiseFilter.frequency.exponentialRampToValueAtTime(500, now + 1.18);
+            noiseFilter.Q.setValueAtTime(2.2, now);
+
+            const noiseGain = audioCtx.createGain();
+            noiseGain.gain.setValueAtTime(0.001, now);
+            noiseGain.gain.exponentialRampToValueAtTime(0.22, now + 0.65);
+            noiseGain.gain.exponentialRampToValueAtTime(0.0001, now + 1.2);
+
+            noise.connect(noiseFilter);
+            noiseFilter.connect(noiseGain);
+            noiseGain.connect(audioCtx.destination);
+            noise.start(now);
+            noise.stop(now + 1.22);
+        }
+
+        // =========================================================
+        // 5. UNIFIED F1 RACING AUDIO CONTROLLER & CAR ANIMATION
+        // Rex Orange County - Hannah Montana (Single Functional Player)
+        // Racecar 🏎️ accurately tracks SVG circuit path
+        // =========================================================
+        const localAudio = document.getElementById('local-audio-player');
+        const seekBar = document.getElementById('music-seek-bar');
+        const currentTimeLabel = document.getElementById('music-current-time');
+        const durationTimeLabel = document.getElementById('music-duration-time');
+        const mobileTimeLeft = document.getElementById('music-time-mobile-left');
+        const mobileTimeRight = document.getElementById('music-time-mobile-right');
+        const statusText = document.getElementById('music-status-text');
+        const eqContainer = document.getElementById('music-eq-container');
+        const discIcon = document.getElementById('music-disc-icon');
+        const playBtn = document.getElementById('music-play-btn');
+
+        let cachedTrackLength = 0;
+        let carAnimFrameId = null;
+
+        function updateRaceCar(fraction) {
+            const path = document.getElementById('f1-circuit-path');
+            const car = document.getElementById('f1-racecar-group');
+            if (!path || !car) return;
+
+            if (!cachedTrackLength || cachedTrackLength === 0) {
+                try {
+                    const len = path.getTotalLength();
+                    if (len > 0) cachedTrackLength = len;
+                } catch (e) {
+                    return;
+                }
+            }
+            if (!cachedTrackLength) return;
+
+            const clamped = Math.max(0, Math.min(1, isFinite(fraction) ? fraction : 0));
+            const currentLen = clamped * cachedTrackLength;
+            const pt = path.getPointAtLength(currentLen);
+
+            // Calculate tangent angle for realistic car steering along the curve
+            const delta = 2.0;
+            const ptAhead = path.getPointAtLength(Math.min(currentLen + delta, cachedTrackLength));
+            const ptBehind = path.getPointAtLength(Math.max(currentLen - delta, 0));
+            const dx = ptAhead.x - ptBehind.x;
+            const dy = ptAhead.y - ptBehind.y;
+            const angle = (dx !== 0 || dy !== 0) ? (Math.atan2(dy, dx) * 180 / Math.PI) : 0;
+
+            car.setAttribute('transform', `translate(${pt.x.toFixed(2)}, ${pt.y.toFixed(2)}) rotate(${angle.toFixed(2)})`);
+        }
+
+        function stepCarAnimation() {
+            if (!localAudio || !localAudio.duration || localAudio.paused) return;
+            const frac = localAudio.currentTime / localAudio.duration;
+            updateRaceCar(frac);
+            carAnimFrameId = requestAnimationFrame(stepCarAnimation);
+        }
+
+        function playLocalAudio() {
+            if (!localAudio) return;
+            localAudio.play().then(() => {
+                updatePlayerUI(true);
+            }).catch(() => {
+                updatePlayerUI(false);
+            });
+        }
+
+        function toggleLocalAudio() {
+            if (!localAudio) return;
+            if (localAudio.paused) {
+                playLocalAudio();
+            } else {
+                localAudio.pause();
+                updatePlayerUI(false);
+            }
+        }
+
+        function seekLocalAudio(percentValue) {
+            if (!localAudio || !localAudio.duration) return;
+            const frac = percentValue / 100;
+            const targetTime = frac * localAudio.duration;
+            localAudio.currentTime = targetTime;
+
+            const timeStr = formatSeconds(targetTime);
+            if (currentTimeLabel) currentTimeLabel.textContent = timeStr;
+            if (mobileTimeLeft) mobileTimeLeft.textContent = timeStr;
+            if (seekBar) seekBar.value = percentValue;
+
+            updateRaceCar(frac);
+        }
+
+        function formatSeconds(sec) {
+            if (!isFinite(sec) || sec < 0) return '0:00';
+            const mins = Math.floor(sec / 60);
+            const secs = Math.floor(sec % 60);
+            return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+        }
+
+        localAudio.addEventListener('loadedmetadata', () => {
+            const durStr = formatSeconds(localAudio.duration);
+            if (durationTimeLabel) durationTimeLabel.textContent = durStr;
+            if (mobileTimeRight) mobileTimeRight.textContent = durStr;
+        });
+
+        localAudio.addEventListener('timeupdate', () => {
+            if (!localAudio.duration) return;
+            const frac = localAudio.currentTime / localAudio.duration;
+            const progress = frac * 100;
+            if (seekBar) seekBar.value = progress;
+            const curStr = formatSeconds(localAudio.currentTime);
+            if (currentTimeLabel) currentTimeLabel.textContent = curStr;
+            if (mobileTimeLeft) mobileTimeLeft.textContent = curStr;
+
+            // When paused, ensure car position reflects current time
+            if (localAudio.paused) {
+                updateRaceCar(frac);
+            }
+        });
+
+        localAudio.addEventListener('play', () => {
+            updatePlayerUI(true);
+            cancelAnimationFrame(carAnimFrameId);
+            carAnimFrameId = requestAnimationFrame(stepCarAnimation);
+        });
+
+        localAudio.addEventListener('pause', () => {
+            updatePlayerUI(false);
+            cancelAnimationFrame(carAnimFrameId);
+            if (localAudio.duration) {
+                updateRaceCar(localAudio.currentTime / localAudio.duration);
+            }
+        });
+
+        localAudio.addEventListener('ended', () => {
+            cancelAnimationFrame(carAnimFrameId);
+            updateRaceCar(0);
+            if (seekBar) seekBar.value = 0;
+            if (currentTimeLabel) currentTimeLabel.textContent = '0:00';
+            if (mobileTimeLeft) mobileTimeLeft.textContent = '0:00';
+        });
+
+        function updatePlayerUI(playing) {
+            if (playing) {
+                if (statusText) statusText.textContent = 'Now Playing • Rex Orange County 🎶';
+                if (eqContainer) eqContainer.classList.add('playing');
+                if (discIcon) discIcon.classList.add('animate-spin');
+                if (playBtn) {
+                    playBtn.innerHTML = `<i data-lucide="pause" class="w-4 h-4 fill-current"></i><span>Pause</span>`;
+                }
+            } else {
+                if (statusText) statusText.textContent = 'Paused • Ketuk Play untuk lanjut 🎶';
+                if (eqContainer) eqContainer.classList.remove('playing');
+                if (discIcon) discIcon.classList.remove('animate-spin');
+                if (playBtn) {
+                    playBtn.innerHTML = `<i data-lucide="play" class="w-4 h-4 fill-current"></i><span>Play</span>`;
+                }
+            }
+            lucide.createIcons();
+        }
+
+        // Initialize car to START line
+        setTimeout(() => {
+            updateRaceCar(0);
+        }, 100);
+    </script>
+</body>
+
+</html>
